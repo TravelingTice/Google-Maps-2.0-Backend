@@ -1,0 +1,84 @@
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  border-bottom: 3px solid black;
+  border-right: 3px solid black;
+  width: 300px;
+  display: inline-block;
+}
+
+.export-section {
+  margin: 10px;
+  display: inline-block;
+}
+
+.export-section button {
+  background-color: blue;
+  border: 3px solid black;
+  color: white;
+  padding: 10px 20px;
+}
+
+.export-section button:hover {
+  border: 3px solid yellow;
+}
+
+h3 {
+  font-size: 14px;
+  display: inline;
+  height: 54px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.location {
+  height: 54px;
+  background-color: #cdcdcd;
+  margin: 10px;
+  border: solid 2px #cdcdcd;
+  cursor: pointer;
+}
+
+.location:hover {
+  border: solid 2px blue;
+}
+
+.icon-img {
+  display: inline-block;
+  height: 40px;
+  margin: 5px 5px;
+  vertical-align: middle;
+}
+
+/* edit page styles */
+.edit-page {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0,0.7);
+}
+
+.edit-window {
+  width: 500px;
+  height: 500px;
+  background: white;
+  position: absolute;
+  z-index: 15;
+  top: 50%;
+  left: 50%;
+  margin: -250px 0 0 -250px;
+}
+
+.hidden {
+  display: none;
+}
+
+.edit-page .top span {
+  float: right;
+  padding: 3px 5px;
+  cursor: pointer;
+}
