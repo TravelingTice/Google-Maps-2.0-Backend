@@ -2,13 +2,19 @@ body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin: 0;
   padding: 0;
+  background-color: #FCFCFC;
+}
+.top {
+  text-align: center;
 }
 
 .header {
-  border-bottom: 3px solid black;
-  border-right: 3px solid black;
-  width: 300px;
-  display: inline-block;
+  width: 100%;
+}
+
+.instructions {
+  background-color: #FFD166;
+  padding: 5px 10px;
 }
 
 .export-section {
@@ -17,14 +23,14 @@ body {
 }
 
 .export-section button {
-  background-color: blue;
-  border: 3px solid black;
+  background-color: #26547C;
+  border: 3px solid #FFD166;
   color: white;
   padding: 10px 20px;
 }
 
 .export-section button:hover {
-  border: 3px solid yellow;
+  border: 3px solid #F8485E;
 }
 
 h3 {
@@ -35,16 +41,40 @@ h3 {
   overflow: hidden;
 }
 
+.loc-module {
+  display: grid;
+  grid-template-columns: 40px calc(100% -  42px);
+  grid-template-areas: 'grip-item' 'location';
+  grid-gap: 0px;
+  border: 2px solid #BCBCBC;
+}
+
+.grip-item {
+  grid-area: 'grip-item';
+  cursor: pointer;
+  border-right: 1px solid #BCBCBC
+}
+
+.grip-item i {
+  font-size: 25px;
+  padding: 23px 10px 5px 10px;
+}
+
+.grip-item:hover {
+  background-color: #EFEFEF;
+}
+
 .location {
+  grid-area: 'location';
   height: 54px;
-  background-color: #cdcdcd;
+  background-color: #FCFCFC;
   margin: 10px;
-  border: solid 2px #cdcdcd;
+  border: solid 2px #FCFCFC;
   cursor: pointer;
 }
 
-.location:hover {
-  border: solid 2px blue;
+.loc-module:hover {
+  border: solid 2px #26547C;
 }
 
 .icon-img {
@@ -59,12 +89,13 @@ h3 {
   position: fixed;
   width: 100vw;
   height: 100vh;
+  top: 0;
   background: rgba(0,0,0,0.7);
 }
 
 .edit-window {
   width: 500px;
-  height: 500px;
+  height: 570px;
   background: white;
   position: absolute;
   z-index: 15;
@@ -80,5 +111,17 @@ h3 {
 .edit-page .top span {
   float: right;
   padding: 3px 5px;
+  cursor: pointer;
+}
+
+.edit-window main {
+  padding: 10px;
+}
+
+.edit-window main img, .edit-window main h3 {
+  display: block;
+}
+
+.edit {
   cursor: pointer;
 }

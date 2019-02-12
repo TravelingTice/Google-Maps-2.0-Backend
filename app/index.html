@@ -6,20 +6,27 @@
     <title>Backend</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <link rel="stylesheet" href="styles/main.css">
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
   </head>
   <body>
-    <div class="edit-page hidden" id="edit-page"></div>
+    <div class="edit-page hidden" id="edit-page">
+    </div>
     <div class="instructions">
       <p>Put file in server in folder wp-content/uploads/google-maps/json</p>
     </div>
-    <div class="header">
-      <h1>Json File editor</h1>
-      <h4>Made by Tice Kralt</h4>
-    </div>
-    <div class="export-section">
-      <button id="export-btn">
-        export
-      </button>
+    <div class="top">
+      <div class="header">
+        <h1>Json File editor</h1>
+        <h4>Made by Tice Kralt</h4>
+      </div>
+      <div class="export-section">
+        <button id="export-btn">
+          export
+        </button>
+      </div>
     </div>
     <div id="content"></div>
     <script src="scripts/main.js"></script>
