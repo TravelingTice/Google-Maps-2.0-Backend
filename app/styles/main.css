@@ -8,6 +8,16 @@ body {
   text-align: center;
 }
 
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.hidden {
+  display: none;
+}
+
 .header {
   width: 100%;
 }
@@ -43,38 +53,23 @@ h3 {
 
 .loc-module {
   display: grid;
-  grid-template-columns: 40px calc(100% -  42px);
-  grid-template-areas: 'grip-item' 'location';
+  grid-template-columns: calc(100% - 40px) 40px;
+  grid-template-areas: 'location' 'plus-icon';
   grid-gap: 0px;
   border: 2px solid #BCBCBC;
+  background-color: #FCFCFC;
 }
 
-.grip-item {
-  grid-area: 'grip-item';
-  cursor: pointer;
-  border-right: 1px solid #BCBCBC
-}
-
-.grip-item i {
-  font-size: 25px;
-  padding: 23px 10px 5px 10px;
-}
-
-.grip-item:hover {
-  background-color: #EFEFEF;
+.loc-module:hover {
+  border: solid 2px #26547C;
 }
 
 .location {
   grid-area: 'location';
   height: 54px;
-  background-color: #FCFCFC;
   margin: 10px;
   border: solid 2px #FCFCFC;
   cursor: pointer;
-}
-
-.loc-module:hover {
-  border: solid 2px #26547C;
 }
 
 .icon-img {
@@ -84,6 +79,29 @@ h3 {
   vertical-align: middle;
 }
 
+.line {
+  position: absolute;
+  width: 10px;
+  height: 70px;
+  border: 2px dotted #BCBCBC;
+  left: calc(100% - 80px);
+  transform: translateY(-20px);
+}
+
+.plus-icon {
+  grid-area: 'plus-icon';
+  font-size: 25px;
+  color: #8C8C8C;
+  border-left: 1px solid #BCBCBC;
+  padding: 25px 12px 12px;
+  cursor: pointer;
+}
+
+.plus-icon:hover {
+  color: #6c6c6c;
+  background-color: #EEE
+}
+
 /* edit page styles */
 .edit-page {
   position: fixed;
@@ -91,21 +109,18 @@ h3 {
   height: 100vh;
   top: 0;
   background: rgba(0,0,0,0.7);
+  z-index: 10;
 }
 
 .edit-window {
   width: 500px;
-  height: 570px;
+  height: 650px;
   background: white;
   position: absolute;
   z-index: 15;
-  top: 50%;
+  top: 40%;
   left: 50%;
   margin: -250px 0 0 -250px;
-}
-
-.hidden {
-  display: none;
 }
 
 .edit-page .top span {
@@ -120,6 +135,21 @@ h3 {
 
 .edit-window main img, .edit-window main h3 {
   display: block;
+}
+
+.edit-window .line-thickness {
+  margin-left: 15px;
+}
+
+#delete {
+  color: #F8485E;
+  background: white;
+  font-size: 16px;
+  text-decoration: underline;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  bottom: 11px;
 }
 
 .edit {
