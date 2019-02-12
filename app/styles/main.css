@@ -58,6 +58,7 @@ h3 {
   grid-gap: 0px;
   border: 2px solid #BCBCBC;
   background-color: #FCFCFC;
+  margin-bottom: 3px;
 }
 
 .loc-module:hover {
@@ -141,6 +142,15 @@ h3 {
   margin-left: 15px;
 }
 
+#save {
+  color: white;
+  background: #26547C;
+  border: 2px solid #FFD166;
+  padding: 7px 20px;
+  position: absolute;
+  bottom: 11px;
+}
+
 #delete {
   color: #F8485E;
   background: white;
@@ -150,6 +160,7 @@ h3 {
   cursor: pointer;
   position: absolute;
   bottom: 11px;
+  right: 10px;
 }
 
 .edit {

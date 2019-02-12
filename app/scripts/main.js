@@ -11,13 +11,13 @@ const imagePath = '/images/';
 // The locations array
 let locations = [];
 
-function loadJson () {
-// Fetch info of all locations in json file
-fetch(`${websiteUrl}${jsonFilePath}locations.json`).then(resp => resp.json()).then(resp => {
-  locations = resp;
-  // next step: put data on screen
-  loadHTML();
-});
+function loadJson() {
+  // Fetch info of all locations in json file
+  fetch(`${websiteUrl}${jsonFilePath}locations.json`).then(resp => resp.json()).then(resp => {
+    locations = resp;
+    // next step: put data on screen
+    loadHTML();
+  });
 }
 
 function loadHTML() {
@@ -30,7 +30,7 @@ function loadHTML() {
     <h3>${loc.title}</h3>
     </div><div class="line"></div><div class="plus-icon">+</div></li>`
     // When all html is loaded, load it on the screen
-    if (i+1 === locations.length) {
+    if (i + 1 === locations.length) {
       loadScreen(html);
     }
   });
@@ -41,6 +41,34 @@ function loadScreen(html) {
   container.html('');
   container.html(html);
   const modules = $('#list').children();
+  // THE LINES
+  // color line according to object property
+  $(modules).each(function(i) {
+    const thisLine = $(this).children()[1];
+    if (locations[i].line) {
+      $(thisLine).css({
+        'background-color': locations[i].lineStyles.color
+      });
+      $(thisLine).css('border', 'none');
+      switch (locations[i].lineStyles.thickness) {
+        case '1':
+          $(thisLine).css('width', '4px');
+          break;
+        case '2':
+          $(thisLine).css('width', '8px');
+          break;
+        case '3':
+          $(thisLine).css('width', '12px');
+          break;
+        case '4':
+          $(thisLine).css('width', '17px');
+          break;
+        case '5':
+          $(thisLine).css('width', '20px');
+          break;
+      }
+    };
+  });
   // the module at the top shouldnt display a line, because it wont have one
   const firstLine = $(modules[0]).children()[1];
   $(firstLine).hide();
@@ -59,10 +87,10 @@ function loadScreen(html) {
 }
 
 // once all elements are loaded, add the click listeners to each tile + the export button
-function addListeners () {
+function addListeners() {
   // Add listener to plus icon for new module
   $('.plus-icon').each(function() {
-    $(this).click(function(){
+    $(this).click(function() {
       addMarker(this);
     });
   });
@@ -78,9 +106,9 @@ function addListeners () {
   });
 }
 
-function addMarker(item){
+function addMarker(item) {
   const thisModule = $(item).parent();
-  const newModuleId = parseInt($(thisModule).attr('id'),10)+1;
+  const newModuleId = parseInt($(thisModule).attr('id'), 10) + 1;
   // create html for new object
   const newModule = `<li class="loc-module" id="${newModuleId}"><div class='location'>
   <img class='icon-img' src='${websiteUrl}${iconPath}default.png'>
@@ -103,6 +131,10 @@ function addMarker(item){
     location: {
       lat: null,
       lng: null
+    },
+    lineStyles: {
+      color: 'black',
+      thickness: 2
     }
   }
   // add new module to the locations array at the specific index
@@ -139,30 +171,29 @@ function loadEditScreen(t) {
     <p>Image: <input id="img-edit" type="text" value="${l.image ? l.image : ''}"></p>
     <p>rideData Url: <input id="rideData-edit" type="text" value="${l.rideData ? l.rideData : ''}"></p>
     <p>zIndex: <input id="zIndex-edit" type="text" value="${l.zIndex ? l.zIndex : ''}"></p>
-    <p><label><input id="line-edit" type="checkbox"> Attached to previous point</label></p>
-    <span>Line color: <input id="line-color-edit" type="color"></span>
-    <span class="line-thickness">Line thickness: <select>
-  <option value="1">1</option>
-  <option value="2">2</option>
-  <option value="3">3</option>
-  <option value="4">4</option>
-  <option value="5">5</option>
+    <p><label><input id="line-edit" type="checkbox" ${l.line ? 'checked' : null}> Attached to previous point</label></p>
+    <span>Line color: <input id="line-color-edit" type="color" value="${l.lineStyles ? l.lineStyles.color : '#000'}"></span>
+    <span class="line-thickness">Line thickness: <select id="line-thickness-edit">
+  <option value="1" ${l.lineStyles ? l.lineStyles.thickness === '1' ? 'selected="selected"' : '' : null}>1</option>
+  <option value="2" ${l.lineStyles ? l.lineStyles.thickness === '2' ? 'selected="selected"' : '' : null}>2</option>
+  <option value="3" ${l.lineStyles ? l.lineStyles.thickness === '3' ? 'selected="selected"' : '' : null}>3</option>
+  <option value="4" ${l.lineStyles ? l.lineStyles.thickness === '4' ? 'selected="selected"' : '' : null}>4</option>
+  <option value="5" ${l.lineStyles ? l.lineStyles.thickness === '5' ? 'selected="selected"' : '' : null}>5</option>
     </select></span>
   </form>
+    <button id="save">Save</button>
     <button id="delete">Delete</button>
   </main>
   </div>`;
   editPage.html(html);
   // add close listener to cross button
-  $('#closeBtn').click(function(){
+  $('#closeBtn').click(function() {
     updateLoc(l, 'modify');
   });
   // add close listener when outside of the edit window is clicked
-  $('.edit-page').click(function(event) {
-    if($(event.target).hasClass('edit-page')){
-      updateLoc(l, 'modify');
-    }
-  });
+  $('#save').click(function() {
+    updateLoc(l, 'modify');
+  })
   // add listener when enter button is pressed when editing an input
   $('input').each(function(i) {
     $(this).keypress(function(e) {
@@ -199,7 +230,7 @@ function updateLoc(loc, mode) {
     locations.splice(pos, 1);
     closeScreen();
   }
-  if  (mode === 'modify') {
+  if (mode === 'modify') {
     // store new values in loc object in locations array
     locations[pos].icon = $('#icon-edit').val();
     locations[pos].title = $('#title-edit').val();
@@ -211,6 +242,10 @@ function updateLoc(loc, mode) {
     locations[pos].image = $('#img-edit') ? $('#img-edit') : null;
     locations[pos].rideData = $('#rideData-edit') ? $('#rideData-edit') : null;
     locations[pos].zIndex = $('#zIndex-edit') ? $('#zIndex-edit') : null;
+    locations[pos].line = $('#line-edit').is(':checked')
+    locations[pos].lineStyles = {};
+    locations[pos].lineStyles.color = $('#line-color-edit').val() ? $('#line-color-edit').val() : null;
+    locations[pos].lineStyles.thickness = $('#line-thickness-edit').val();
     closeScreen();
   }
 }
@@ -268,7 +303,7 @@ function selectLocPos(name, array) {
   return pos;
 }
 
-$(document).ready(function () {
+$(document).ready(function() {
   // Kick off!!!
   loadJson();
 });

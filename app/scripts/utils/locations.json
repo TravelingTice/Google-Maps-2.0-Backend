@@ -10,7 +10,10 @@
     "rideData": "https://www.strava.com/activities/1173236887",
     "youtube": "9SiBEaDGH7s",
     "icon": "EUp1ST.png",
-    "line": "EUp1"
+    "lineStyles": {
+      "color": "black",
+      "thickness": 2
+    }
   },
   {
     "title": "Dewy Tent, Missing the Kickstand, Meeting Grandparents and Some Rice!",
@@ -23,7 +26,10 @@
     "rideData": "https://www.strava.com/activities/1173236957",
     "youtube": "x1XsSDj7Kb8",
     "icon": "EUp1vid.png",
-    "line": "EUp1"
+    "lineStyles": {
+      "color": "black",
+      "thickness": 2
+    }
   },
   {
     "title": "I Went Up Someone's Backyard!",
@@ -36,7 +42,10 @@
     "rideData": "https://www.strava.com/activities/1173236993",
     "youtube": "HiyjGF7vIxw",
     "icon": "EUp1vid.png",
-    "line": "EUp1"
+    "lineStyles": {
+      "color": "black",
+      "thickness": 2
+    }
   },
   {
     "title": "I Stayed At A German's House!",
@@ -49,7 +58,10 @@
     "rideData": "https://www.strava.com/activities/1173237030",
     "youtube": "zWDDQkjDSMk",
     "icon": "EUp1vid.png",
-    "line": "EUp1"
+    "lineStyles": {
+      "color": "black",
+      "thickness": 2
+    }
   },
   {
     "title": "Taking Shelter From the Rain!",
@@ -62,7 +74,10 @@
     "rideData": "https://www.strava.com/activities/1173237009",
     "youtube": "gApVnlcxu_k",
     "icon": "EUp1vid.png",
-    "line": "EUp1"
+    "lineStyles": {
+      "color": "black",
+      "thickness": 2
+    }
   },
   {
     "title": "Arrived in Bremen!",
@@ -75,7 +90,10 @@
     "rideData": "https://www.strava.com/activities/1173237034",
     "youtube": "3Y7688guReM",
     "icon": "EUp1vid.png",
-    "line": "EUp1"
+    "lineStyles": {
+      "color": "black",
+      "thickness": 2
+    }
   },
   {
     "title": "Exploring the city of Bremen!",
@@ -88,7 +106,10 @@
     "youtube": "UkEjLPXC7Uc",
     "icon": "EUp1H.png",
     "zIndex": 5,
-    "line": "EUp1"
+    "lineStyles": {
+      "color": "black",
+      "thickness": 2
+    }
   },
   {
     "title": "Random German Tractor Parade Encounter!",
@@ -101,7 +122,10 @@
     "rideData": "https://www.strava.com/activities/1179491212",
     "youtube": "u5tRmuLf3b4",
     "icon": "EUp1vid.png",
-    "line": "EUp1"
+    "lineStyles": {
+      "color": "black",
+      "thickness": 2
+    }
   },
   {
     "title": "I DID IT!!!",
@@ -114,7 +138,10 @@
     "rideData": "https://www.strava.com/activities/1179491253",
     "youtube": "VOPXS_dv0_w",
     "icon": "EUp1vid.png",
-    "line": "EUp1"
+    "lineStyles": {
+      "color": "black",
+      "thickness": 2
+    }
   },
   {
     "title": "City Cycling through Hamburg!",
@@ -128,7 +155,10 @@
     "youtube": "jsMSHM7IkwM",
     "icon": "EUp1H.png",
     "zIndex": 5,
-    "line": "EUp1"
+    "lineStyles": {
+      "color": "black",
+      "thickness": 2
+    }
   },
   {
     "title": "Cycling through Lübeck, Germany!",
@@ -141,7 +171,10 @@
     "rideData": "https://www.strava.com/activities/1182612847",
     "youtube": "EyNeGP1NHIk",
     "icon": "EUp1vid.png",
-    "line": "EUp1"
+    "lineStyles": {
+      "color": "black",
+      "thickness": 2
+    }
   },
   {
     "title": "Almost Got Blown Off My Bike!",
@@ -154,7 +187,10 @@
     "rideData": "https://www.strava.com/activities/1182612781",
     "youtube": "Esme1SMNQ5w",
     "icon": "EUp1vid.png",
-    "line": "EUp1"
+    "lineStyles": {
+      "color": "black",
+      "thickness": 2
+    }
   },
   {
     "title": "Arrived in Rostock!",
@@ -167,7 +203,10 @@
     "rideData": "https://www.strava.com/activities/1190393227",
     "youtube": "cz2Eyb53ako",
     "icon": "EUp1vid.png",
-    "line": "EUp1"
+    "lineStyles": {
+      "color": "black",
+      "thickness": 2
+    }
   },
   {
     "title": "Made it to Denmark!",
@@ -180,7 +219,10 @@
     "rideData": "https://www.strava.com/activities/1190393230",
     "youtube": "BMbG1Mdad_Y",
     "icon": "EUp1vid.png",
-    "line": "EUp1"
+    "lineStyles": {
+      "color": "black",
+      "thickness": 2
+    }
   },
   {
     "title": "I LEFT MY WALLET AT THE SIDE OF THE ROAD!!",
@@ -193,7 +235,10 @@
     "rideData": "https://www.strava.com/activities/1190393262",
     "youtube": "ejtO4xW-e24",
     "icon": "EUp1vid.png",
-    "line": "EUp1"
+    "lineStyles": {
+      "color": "black",
+      "thickness": 2
+    }
   },
   {
     "title": "BEST CAMPSITE EVER!",
@@ -206,7 +251,10 @@
     "rideData": "https://www.strava.com/activities/1190393291",
     "youtube": "F0ALbkeGv2I",
     "icon": "EUp1vid.png",
-    "line": "EUp1"
+    "lineStyles": {
+      "color": "black",
+      "thickness": 2
+    }
   },
   {
     "title": "Arrived in Copenhagen!!",
@@ -219,7 +267,10 @@
     "rideData": "https://www.strava.com/activities/1190393335",
     "youtube": "X54uZ0jSzYM",
     "icon": "EUp1vid.png",
-    "line": "EUp1"
+    "lineStyles": {
+      "color": "black",
+      "thickness": 2
+    }
   },
   {
     "title": "Exploring Copenhagen by Bicycle",
@@ -231,8 +282,7 @@
     "date": "September 19, 2017",
     "youtube": "EF_4ZZ5l8-0",
     "icon": "EUp1H.png",
-    "zIndex": 5,
-    "line": "EUp1"
+    "zIndex": 5
   },
   {
     "title": "Wildcamping in Sweden!",
@@ -244,8 +294,7 @@
     "date": "September 20, 2017",
     "rideData": "https://www.strava.com/activities/1195951869",
     "youtube": "vMQ7jwaDYKM",
-    "icon": "EUp1vid.png",
-    "line": "EUp1"
+    "icon": "EUp1vid.png"
   },
   {
     "title": "I Got My Own Private Pool!",
@@ -257,8 +306,7 @@
     "date": "September 21, 2017",
     "rideData": "https://www.strava.com/activities/1195951862",
     "youtube": "AC_T5SNCHiY",
-    "icon": "EUp1vid.png",
-    "line": "EUp1"
+    "icon": "EUp1vid.png"
   },
   {
     "title": "The First Hills and Puncturing my Air Matress...",
@@ -270,8 +318,7 @@
     "date": "September 29, 2017",
     "rideData": "https://www.strava.com/activities/1213700053",
     "youtube": "2yUw0sqVGVs",
-    "icon": "EUp1vid.png",
-    "line": "EUp1"
+    "icon": "EUp1vid.png"
   },
   {
     "title": "Am I still in Sweden?!",
@@ -283,8 +330,7 @@
     "date": "September 30, 2017",
     "rideData": "https://www.strava.com/activities/1213700036",
     "youtube": "pONc4oBXjIQ",
-    "icon": "EUp1vid.png",
-    "line": "EUp1"
+    "icon": "EUp1vid.png"
   },
   {
     "title": "Cycling through Gothenborg!",
@@ -296,8 +342,7 @@
     "date": "October 1, 2017",
     "rideData": "https://www.strava.com/activities/1213700148",
     "youtube": "F1zSd1KY0OE",
-    "icon": "EUp1vid.png",
-    "line": "EUp1"
+    "icon": "EUp1vid.png"
   },
   {
     "title": "LOADS of RAIN and PLAN CHANGES!",
@@ -309,8 +354,8 @@
     "date": "October 2, 2017",
     "rideData": "https://www.strava.com/activities/1213700193",
     "youtube": "_SKjUuwTq3w",
-    "icon": "EUp1vid.png",
-    "line": "EUp1"
+    "icon": "EUp1vid.png"
+
   },
   {
     "title": "Made it to NORWAY!!",
@@ -322,8 +367,8 @@
     "date": "October 3, 2017",
     "rideData": "https://www.strava.com/activities/1213700191",
     "youtube": "X8XAlzpyqlU",
-    "icon": "EUp1vid.png",
-    "line": "EUp1"
+    "icon": "EUp1vid.png"
+
   },
   {
     "title": "Do I need Winter Tires?!",
@@ -335,8 +380,8 @@
     "date": "October 4, 2017",
     "rideData": "https://www.strava.com/activities/1227090684",
     "youtube": "Tk-l-LqdPyI",
-    "icon": "EUp1vid.png",
-    "line": "EUp1"
+    "icon": "EUp1vid.png"
+
   },
   {
     "title": "I arrived in OSLO!!",
@@ -348,8 +393,8 @@
     "date": "October 5, 2017",
     "rideData": "https://www.strava.com/activities/1227090930",
     "youtube": "GQRH29jDxlU",
-    "icon": "EUp1vid.png",
-    "line": "EUp1"
+    "icon": "EUp1vid.png"
+
   },
   {
     "title": "Everything Is So EXPENSIVE Here!!",
@@ -368,8 +413,8 @@
     },
     "rideData": "https://www.strava.com/activities/1227090792",
     "youtube": "Y2nN5oHqEus",
-    "icon": "EUp1vid.png",
-    "line": "EUp1"
+    "icon": "EUp1vid.png"
+
   },
   {
     "title": "Exploring Oslo!! (A little better than yesterday!!)",
@@ -388,8 +433,7 @@
     },
     "youtube": "v50chEh02fw",
     "icon": "EUp1H.png",
-    "zIndex": 5,
-    "line": "EUp1"
+    "zIndex": 5
   },
   {
     "title": "I Almost Crashed My Drone!!",
@@ -401,8 +445,7 @@
     "date": "October 8, 2017",
     "rideData": "https://www.strava.com/activities/1227091059",
     "youtube": "Q2_Mqe4mANU",
-    "icon": "EUp1vid.png",
-    "line": "EUp1"
+    "icon": "EUp1vid.png"
   },
   {
     "title": "Beautiful Autumn Colors in Norway!",
@@ -414,8 +457,8 @@
     "date": "October 9, 2017",
     "rideData": "https://www.strava.com/activities/1227091043",
     "youtube": "sNSIDQl-1iw",
-    "icon": "EUp1vid.png",
-    "line": "EUp1"
+    "icon": "EUp1vid.png"
+
   },
   {
     "title": "Everything Is FROZEN!",
@@ -427,8 +470,8 @@
     "date": "October 10, 2017",
     "rideData": "https://www.strava.com/activities/1227091016",
     "youtube": "or7T3mxAf3g",
-    "icon": "EUp1vid.png",
-    "line": "EUp1"
+    "icon": "EUp1vid.png"
+
   },
   {
     "title": "Definitely a TOUGH Day! And camping in the SNOW!",
@@ -440,8 +483,8 @@
     "date": "October 11, 2017",
     "rideData": "https://www.strava.com/activities/1227089761",
     "youtube": "FMY4awfv_oc",
-    "icon": "EUp1vid.png",
-    "line": "EUp1"
+    "icon": "EUp1vid.png"
+
   },
   {
     "title": "Cycling in The ARCTIC!",
@@ -452,8 +495,8 @@
     "description": "The day started very cold again. Had to climb 3 huge mountains to make it to the place I had an Airbnb Apartment. Thanks to BicycleTouringPro I found a free hot shower along the way!",
     "date": "October 12, 2017",
     "youtube": "RtNwPSTqnMM",
-    "icon": "EUp1vid.png",
-    "line": "EUp1"
+    "icon": "EUp1vid.png"
+
   },
   {
     "title": "I'm READY for the SNOW!",
@@ -464,8 +507,8 @@
     "description": "Finally a rest day! Time to dry out all my equipment and prepare for the next stage, which was supposed to get even worse...",
     "date": "October 13, 2017",
     "youtube": "EYT4ZeVC1r0",
-    "icon": "EUp1vid.png",
-    "line": "EUp1"
+    "icon": "EUp1vid.png"
+
   },
   {
     "title": "Worst Headwind EVER",
@@ -477,8 +520,8 @@
     "date": "October 14, 2017",
     "rideData": "https://www.strava.com/activities/1237180198",
     "youtube": "nlGNKoW3s20",
-    "icon": "EUp1vid.png",
-    "line": "EUp1"
+    "icon": "EUp1vid.png"
+
   },
   {
     "title": "Made it to the BEAUTIFUL FJORDS!",
@@ -490,8 +533,8 @@
     "date": "October 15, 2017",
     "rideData": "https://www.strava.com/activities/1237180238",
     "youtube": "78Ls1w_AYw",
-    "icon": "EUp1vid.png",
-    "line": "EUp1"
+    "icon": "EUp1vid.png"
+
   },
   {
     "title": "BEST DETOUR EVER!!",
@@ -503,8 +546,8 @@
     "date": "October 16, 2017",
     "rideData": "https://www.strava.com/activities/1237180248",
     "youtube": "u1y-wPkYuRg",
-    "icon": "EUp1vid.png",
-    "line": "EUp1"
+    "icon": "EUp1vid.png"
+
   },
   {
     "title": "I'M SMOKING!",
@@ -516,8 +559,8 @@
     "date": "October 17, 2017",
     "rideData": "https://www.strava.com/activities/1237180272",
     "youtube": "JZoUXHheXoM",
-    "icon": "EUp1vid.png",
-    "line": "EUp1"
+    "icon": "EUp1vid.png"
+
   },
   {
     "title": "LAUGH ALL YOU WANT!! I Made It to Bergen!! ",
@@ -529,8 +572,8 @@
     "date": "October 18, 2017",
     "rideData": "https://www.strava.com/activities/1237180340",
     "youtube": "sUwEfRmeNe4",
-    "icon": "EUp1vid.png",
-    "line": "EUp1"
+    "icon": "EUp1vid.png"
+
   },
   {
     "title": "One Day in BERGEN, Norway!",
@@ -542,8 +585,7 @@
     "date": "October 19, 2017",
     "youtube": "wGUEsm7tiPM",
     "icon": "EUp1H.png",
-    "zIndex": 5,
-    "line": "EUp1"
+    "zIndex": 5
   },
   {
     "title": "Roadside Ruins!",
@@ -555,8 +597,8 @@
     "date": "October 20, 2017",
     "rideData": "https://www.strava.com/activities/1243262983",
     "youtube": "QFU463mJhy0",
-    "icon": "EUp1vid.png",
-    "line": "EUp1"
+    "icon": "EUp1vid.png"
+
   },
   {
     "title": "LOADS of BRIDGES",
@@ -568,8 +610,8 @@
     "date": "October 21, 2017",
     "rideData": "https://www.strava.com/activities/1243263033",
     "youtube": "1332lbPDBM0",
-    "icon": "EUp1vid.png",
-    "line": "EUp1"
+    "icon": "EUp1vid.png"
+
   },
   {
     "title": "Last Ferry to STAVANGER",
@@ -581,8 +623,8 @@
     "date": "October 22, 2017",
     "rideData": "https://www.strava.com/activities/1243263081",
     "youtube": "CjXDE_5k_mc",
-    "icon": "EUp1vid.png",
-    "line": "EUp1"
+    "icon": "EUp1vid.png"
+
   },
   {
     "title": "I MET SOMEONE...",
@@ -593,8 +635,8 @@
     "description": "In Stavanger I met a guy at a Sturbucks who was very interested in my story and hosted me that night! I even went with him to a meeting about a business he was working for: 'ForEver Living'. He wanted me to do the same thing as well but I declined the offer.. It was quite an interesting experience though!",
     "date": "October 23, 2017",
     "youtube": "3AUnJKQSCHM",
-    "icon": "EUp1vid.png",
-    "line": "EUp1"
+    "icon": "EUp1vid.png"
+
   },
   {
     "title": "Some EXPLANATIONS and THE TIME I ALMOST GAVE UP",
@@ -605,7 +647,7 @@
     "description": "Took a train back to Oslo, from which the plan was to take a bus to Stockholm, Sweden. But it turned out bikes were not allowed on buses and the train was also not an option. I decided to cycle all the way to Stockholm, Sweden...",
     "date": "October 24, 2017",
     "youtube": "11N9bMxilNU",
-    "icon": "EUp1vid.png",
-    "line": "EUp1"
+    "icon": "EUp1vid.png"
+
   }
 ]
