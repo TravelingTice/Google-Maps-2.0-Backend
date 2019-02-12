@@ -36,50 +36,36 @@ function loadHTML() {
 }
 
 function loadScreen(html) {
-  const container = document.getElementById('content');
-  container.innerHTML = '';
-  container.innerHTML = html;
+  const container = $('#content');
+  container.html('');
+  container.html(html);
   addListeners();
 }
 
 // once all elements are loaded, add the click listeners to each tile + the export button
 function addListeners () {
   // Get all the tiles
-  const tileList = document.querySelectorAll('.location');
+  const tileList = $('.location');
   // Add event listener to each tile that will load the edit screen
-  tileList.forEach(function(tile) {
-    tile.addEventListener('click', function() {
+  tileList.each(function(i, tile) {
+    $(tile).click(function() {
       loadEditScreen(tile);
     });
   });
   // Add listener to export button
-  const exportBtn = document.getElementById('export-btn');
-  exportBtn.addEventListener('click', function() {
+  const exportBtn = $('#export-btn');
+  exportBtn.click(function() {
     exportJSON();
   });
 }
 
-// Export the json and update the file with an Http request
-function exportJSON() {
-  const newData = JSON.stringify(locations);
-  // We're gonna do it with an ajax request
-  $.ajax({
-    type: 'PUT',
-    url: 'C:/Users/matth/Desktop/Work/Google-Maps-Tours-2.0/Backend/app/scripts/utils/locations.json',
-    contentType: 'application/json',
-    data: newData,
-    success: function(result) {
-      location.reload();
-    }
-});
-}
-
 function loadEditScreen(t) {
   // Target the edit page and display it
-  const editPage = document.getElementById('edit-page');
-  editPage.classList.remove('hidden');
+  const editPage = $('.edit-page');
+  editPage.removeClass('hidden');
   // Select the right location object we need to paste
-  const l = (selectLoc(t.children[1].innerHTML, locations));
+  const tileT = $(t.children[1]).html();
+  const l = (selectLoc(tileT, locations));
   // Create the edit window
   const html = `
   <div class='edit-window'>
@@ -103,15 +89,15 @@ function loadEditScreen(t) {
   </form>
   </main>
   </div>`;
-  editPage.innerHTML = html;
+  editPage.html(html);
   // add close listener to cross button
-  document.getElementById('closeBtn').addEventListener('click', function(){
+  $('#closeBtn').click(function(){
     updateLoc(l);
     loadHTML();
   });
   // add listener when enter button is pressed
-  document.querySelectorAll('input').forEach(function(el) {
-    el.addEventListener('keypress', function(e) {
+  $('input').each(function(i, el) {
+    $(el).keypress(function(e) {
       if (e.keyCode === 13) {
         updateLoc(l);
         loadHTML();
@@ -122,7 +108,7 @@ function loadEditScreen(t) {
 
 // close edit window screen
 function closeScreen() {
-  document.getElementById('edit-page').className += ' hidden';
+  $('#edit-page').addClass('hidden');
 }
 
 // Filter the right object from the array of objects that corresponds with the name property of that object
@@ -152,17 +138,23 @@ function updateLoc(loc) {
   // select position of location in locations array
   const pos = selectLocPos(loc.title, locations);
   // store new values in loc object in locations array
-  locations[pos].icon = document.getElementById('icon-edit').value;
-  locations[pos].title = document.getElementById('title-edit').value;
-  locations[pos].location.lat = document.getElementById('lat-edit').value;
-  locations[pos].location.lng = document.getElementById('lng-edit').value;
-  locations[pos].date = document.getElementById('date-edit').value ? document.getElementById('date-edit').value : null;
-  locations[pos].description = document.getElementById('desc-edit').innerHTML ? document.getElementById('desc-edit').innerHTML : null;
-  locations[pos].youtube = document.getElementById('yt-edit').value ? document.getElementById('yt-edit').value : null;
-  locations[pos].image = document.getElementById('img-edit') ? document.getElementById('img-edit') : null;
-  locations[pos].rideData = document.getElementById('rideData-edit') ? document.getElementById('rideData-edit') : null;
-  locations[pos].zIndex = document.getElementById('zIndex-edit') ? document.getElementById('zIndex-edit') : null;
+  locations[pos].icon = $('#icon-edit').val();
+  locations[pos].title = $('#title-edit').val();
+  locations[pos].location.lat = $('#lat-edit').val();
+  locations[pos].location.lng = $('#lng-edit').val();
+  locations[pos].date = $('#date-edit').val() ? $('#date-edit').val() : null;
+  locations[pos].description = $('#desc-edit').innerHTML ? $('#desc-edit').html() : null;
+  locations[pos].youtube = $('#yt-edit').val() ? $('#yt-edit').val() : null;
+  locations[pos].image = $('#img-edit') ? $('#img-edit') : null;
+  locations[pos].rideData = $('#rideData-edit') ? $('#rideData-edit') : null;
+  locations[pos].zIndex = $('#zIndex-edit') ? $('#zIndex-edit') : null;
   closeScreen();
+}
+
+//THIS ONE IS DIFFERENT IN THE FINAL FILE
+// Export the json and update the file with an Http request
+function exportJSON() {
+  console.log('export');
 }
 
 $(document).ready(function () {
