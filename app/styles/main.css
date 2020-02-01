@@ -166,3 +166,16 @@ h3 {
 .edit {
   cursor: pointer;
 }
+
+/* media queries */
+@media screen and (max-width: 500px) {
+  .edit-window {
+    width: 350px;
+    margin: -175px 0 0 -175px;
+    font-size: 14px;
+    top: 27%;
+  }
+  .edit-window #desc-edit {
+    width: 330px;
+  }
+}

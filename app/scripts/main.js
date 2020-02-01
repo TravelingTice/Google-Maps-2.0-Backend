@@ -102,7 +102,7 @@ function addListeners() {
   });
   // Add listener to export button
   $('#export-btn').click(function() {
-    formData();
+    exportJSON();
   });
 }
 
@@ -270,12 +270,6 @@ function reorderArray() {
   loadHTML();
 }
 
-//THESE ARE DIFFERENT IN THE FINAL FILE
-// form the new locations array with the updated properties
-function formData() {
-
-  exportJSON(data);
-}
 // Export the json and update the file with an Http request
 function exportJSON(data) {
 
